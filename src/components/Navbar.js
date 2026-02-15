@@ -1,10 +1,8 @@
 import { Link } from "react-scroll";
 import { useState, useEffect } from "react";
-import { useEditMode } from "../context/EditModeContext";
 
 export default function Navbar() {
   const [isDark, setIsDark] = useState(false);
-  const { isEditMode, toggleEditMode } = useEditMode();
 
   useEffect(() => {
     if (localStorage.getItem("theme") === "dark") {
@@ -20,45 +18,40 @@ export default function Navbar() {
     localStorage.setItem("theme", newTheme);
   };
 
-  const navItems = [
-    { to: "home", label: "Home" },
-    { to: "about", label: "About" },
-    { to: "projects", label: "Projects" },
-    { to: "skills", label: "Skills" },
-    { to: "resume", label: "Resume" },
-    { to: "contact", label: "Contact" },
-  ];
+  const navItems = ["home", "about", "education", "projects", "skills", "contact"];
 
   return (
-    <nav className="sticky top-0 z-50 bg-white dark:bg-gray-900 shadow-md">
-      <div className="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
-        <h1 className="text-2xl font-bold text-blue-600 dark:text-blue-400">Suksham</h1>
+    <nav className="sticky top-0 z-50 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-700">
+      <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+        
+        {/* LEFT NAME */}
+        <h1 className="text-xl font-semibold tracking-wide text-slate-900 dark:text-white">
+          Suksham Gupta
+        </h1>
 
-        <div className="flex items-center gap-4">
+        {/* RIGHT LINKS */}
+        <div className="flex items-center gap-6">
           {navItems.map((item) => (
             <Link
-              key={item.to}
-              to={item.to}
+              key={item}
+              to={item}
               smooth={true}
               duration={500}
               offset={-80}
               spy={true}
-              activeClass="text-blue-600 dark:text-blue-400 font-semibold underline"
-              className="cursor-pointer text-gray-700 dark:text-gray-300 hover:text-blue-500 transition-colors"
+              activeClass="text-blue-600 dark:text-blue-400 font-medium"
+              className="cursor-pointer capitalize text-slate-600 dark:text-slate-300 hover:text-blue-500 transition-colors"
             >
-              {item.label}
+              {item}
             </Link>
           ))}
 
-          <button onClick={toggleTheme} className="text-xl">
-            {isDark ? "☀️" : "🌙"}
-          </button>
-
           <button
-            onClick={toggleEditMode}
-            className="ml-2 text-gray-700 dark:text-gray-300 hover:text-green-500 border px-3 py-1 rounded"
+            onClick={toggleTheme}
+            className="text-lg hover:scale-110 transition-transform"
+            aria-label="Toggle theme"
           >
-            {isEditMode ? "Editing ✏️" : "View Mode"}
+            {isDark ? "☀️" : "🌙"}
           </button>
         </div>
       </div>

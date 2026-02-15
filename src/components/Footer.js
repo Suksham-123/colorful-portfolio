@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-white text-center py-4">
-      <p>&copy; 2025 My Colorful Portfolio. All rights reserved.</p>
+    <footer className="py-6 text-center text-sm text-slate-500 dark:text-slate-400">
+      © {new Date().getFullYear()} Suksham Gupta
     </footer>
   );
 }
