@@ -1,31 +1,35 @@
-# Colorful Portfolio 🌈
+# Suksham Gupta – Portfolio Website
 
-A vibrant and customizable portfolio website built with **ReactJS** and **Tailwind CSS**. Easily edit your profile, skills, projects, and resume — all directly on the site!
+This is my personal portfolio website showcasing my skills, projects, and work experience as a Frontend Developer.  
+The portfolio is designed with a clean, modern UI and supports both light and dark themes for better accessibility.
 
-🔗 **Live Site**: [https://colorful-portfolio-i5a5.vercel.app](https://colorful-portfolio-i5a5.vercel.app)
+🔗 Live Website: https://colorful-portfolio-i5a5.vercel.app/
+
+---
+
+## Tech Stack
+
+- React.js  
+- Tailwind CSS  
+- Framer Motion  
+- JavaScript  
+- Vercel (Deployment)
+
+---
 
 ## Features
 
-- Edit Mode to update content directly
-- Resume builder with PDF download
-- Add/remove skills, projects, testimonials
-- Contact form with EmailJS
-- Light/Dark mode toggle
-- Saves changes using localStorage
+- Responsive and modern design  
+- Light / Dark theme toggle  
+- Smooth animations and transitions  
+- Projects section with live links  
+- Work experience and education sections  
+- Clean, professional layout inspired by modern developer portfolios  
 
-## How to Run Locally
+---
 
-```bash
-git clone https://github.com/your-username/colorful-portfolio.git
-cd colorful-portfolio
-npm install
-npm start
+## Getting Started (Local Setup)
 
-## 🛠️ Tech Stack
-
-- ⚛️ **React.js** – Frontend framework
-- 🎨 **Tailwind CSS** – Utility-first CSS for styling
-- 📄 **jsPDF** – Generate downloadable PDF resumes
-- ✉️ **EmailJS** – Contact form email handling
-- ▲ **Vercel** – Deployment platform
-
+1. Clone the repository  
+   ```bash
+   git clone https://github.com/Suksham-123/colorful-portfolio.git
