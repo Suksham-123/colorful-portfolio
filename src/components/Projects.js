@@ -12,7 +12,7 @@ export default function Projects() {
       title: "AI Website Generator",
       description:
         "Built a full-stack web application that generates complete HTML websites using OpenAI API with live preview, download functionality, and cloud deployment.",
-      link: "https://ai-website.vercel.app",
+      link: "https://ai-website-generator.vercel.app/",
     },
     {
       title: "Portfolio Website",
