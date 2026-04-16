@@ -43,7 +43,7 @@ export default function Contact() {
               GitHub:
             </span>{" "}
             <a
-              href="YOUR_GITHUB_LINK"
+              href="https://github.com/Suksham-123"
               target="_blank"
               rel="noopener noreferrer"
               className="text-slate-700 dark:text-slate-300 hover:underline"
